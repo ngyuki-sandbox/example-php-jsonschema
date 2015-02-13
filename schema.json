@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "definitions": {
+    "oreore": {
+      "type": "string",
+      "pattern": "oreore"
+    }
+  },
+
+  "type": "object",
+  "required": ["id", "name"],
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "$ref": "#/definitions/oreore"
+    }
+  }
+}
